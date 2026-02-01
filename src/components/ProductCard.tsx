@@ -28,6 +28,7 @@ export default function ProductCard({ id, name, price, weight, purity, image, ty
                         alt={name}
                         fill
                         className="object-contain drop-shadow-lg"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                 </div>
             </div>

@@ -20,8 +20,10 @@ export default function Home() {
               fill
               className="object-cover opacity-80"
               priority
+              sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 to-navy-900/60" />
+            {/* Reduced opacity to make image more visible on mobile */}
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/85 to-navy-900/50" />
           </div>
 
           <div className="container relative z-10 px-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -138,12 +140,13 @@ export default function Home() {
         {/* CTA / IMAGE SECTION */}
         <section className="bg-navy-900 text-white overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="relative h-96 md:h-auto">
+            <div className="relative h-96 md:h-auto min-h-[300px]">
               <Image
                 src="/gold-coins.png"
                 alt="Gold Investment"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="p-12 md:p-20 flex flex-col justify-center">
